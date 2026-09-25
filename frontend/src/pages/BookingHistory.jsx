@@ -648,7 +648,7 @@ function BookingHistory() {
 
                 <p className="relative mx-auto mt-2 max-w-md text-sm leading-6 text-slate-500">
                   Find a professional, choose a service and create your first
-                  booking from ServiceHub.
+                  booking from Sahayra.
                 </p>
 
                 <button

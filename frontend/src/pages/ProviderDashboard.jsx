@@ -303,7 +303,7 @@ function ProviderDashboard() {
           <header className="flex h-14 items-center justify-between border-b border-slate-200/80">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-teal-600">
-                ServiceHub
+                Sahayra
               </p>
 
               <p className="mt-0.5 text-sm font-semibold text-[#0d1b2a]">
@@ -365,7 +365,7 @@ function ProviderDashboard() {
               {/* DESCRIPTION */}
 
               <p className="mt-6 max-w-2xl text-sm leading-7 text-slate-300">
-                Here's what's happening with your ServiceHub business. Keep your
+                Here's what's happening with your Sahayra business. Keep your
                 services fresh and stay on top of customer requests.
               </p>
 

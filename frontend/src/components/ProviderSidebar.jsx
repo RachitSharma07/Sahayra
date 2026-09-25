@@ -186,7 +186,7 @@ function ProviderSidebar({ open, onClose }) {
 
             <div>
               <p className="text-sm font-bold tracking-tight text-white">
-                ServiceHub
+                Sahayra
               </p>
 
               <p className="text-[10px] uppercase tracking-[0.18em] text-white/35">

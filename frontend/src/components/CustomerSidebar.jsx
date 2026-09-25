@@ -278,7 +278,7 @@ function CustomerSidebar({ open, onClose }) {
 
             <div>
               <p className="text-sm font-bold tracking-tight text-white">
-                ServiceHub
+                Sahayra
               </p>
 
               <p className="mt-0.5 text-[9px] font-bold uppercase tracking-[0.2em] text-white/30">

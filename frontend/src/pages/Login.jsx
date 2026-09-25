@@ -173,7 +173,7 @@ function Login() {
                 </div>
 
                 <span className="text-2xl font-black tracking-tight text-white">
-                  ServiceHub
+                  Sahayra
                 </span>
               </button>
 
@@ -253,7 +253,7 @@ function Login() {
                   </div>
 
                   <span className="text-xl font-black tracking-tight text-[#0d1b2a]">
-                    ServiceHub
+                    Sahayra
                   </span>
                 </button>
               </div>
@@ -264,7 +264,7 @@ function Login() {
                 </p>
 
                 <h2 className="mt-3 text-3xl font-black tracking-[-0.04em] text-[#0b1825] sm:text-4xl">
-                  Sign in to ServiceHub.
+                  Sign in to Sahayra.
                 </h2>
 
                 <p className="mt-3 text-sm leading-6 text-slate-500">

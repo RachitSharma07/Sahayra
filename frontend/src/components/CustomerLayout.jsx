@@ -47,7 +47,7 @@ function CustomerLayout() {
 
     return {
       section: "Customer workspace",
-      description: "Manage your ServiceHub experience",
+      description: "Manage your Sahayra experience",
     };
   };
 

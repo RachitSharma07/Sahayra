@@ -115,7 +115,7 @@ function AuditActivity({
 
             <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
               Track authentication, service, booking, provider and
-              administrative activity across ServiceHub.
+              administrative activity across Sahayra.
             </p>
           </div>
 

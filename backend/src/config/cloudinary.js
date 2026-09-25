@@ -4,7 +4,7 @@ const uploadToCloudinary = async (filePath) => {
   const result = await cloudinary.uploader.upload(
     filePath,
     {
-      folder: "servicehub"
+      folder: "Sahayra"
     }
   );
 

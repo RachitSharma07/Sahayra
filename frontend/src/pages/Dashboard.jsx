@@ -29,7 +29,7 @@ function Dashboard() {
             </div>
 
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
-              Welcome to ServiceHub
+              Welcome to Sahayra
             </h2>
 
             <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">
@@ -134,7 +134,7 @@ function Dashboard() {
             <h2 className="text-xl font-bold text-slate-900">Quick Actions</h2>
 
             <p className="mt-1 text-sm text-slate-500">
-              Manage your ServiceHub business.
+              Manage your Sahayra business.
             </p>
           </div>
 

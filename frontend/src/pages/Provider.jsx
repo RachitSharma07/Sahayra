@@ -243,7 +243,7 @@ function Provider() {
         <header className="flex min-h-14 items-center justify-between border-b border-slate-200 pb-5">
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-teal-600">
-              ServiceHub
+              Sahayra
             </p>
 
             <p className="mt-1 text-sm font-semibold text-[#08131f]">
@@ -301,7 +301,7 @@ function Provider() {
               </h1>
 
               <p className="mt-6 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">
-                Your professional presence on ServiceHub. Keep your skills,
+                Your professional presence on Sahayra. Keep your skills,
                 experience and service area accurate so customers know exactly
                 what you offer.
               </p>

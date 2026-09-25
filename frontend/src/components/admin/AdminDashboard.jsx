@@ -24,7 +24,7 @@ const AdminDashboard = ({ statistics }) => {
 
         <div className="relative max-w-3xl">
           <p className="mb-3 text-sm font-semibold text-[#67e8f9]">
-            ServiceHub Administration
+            Sahayra Administration
           </p>
 
           <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">

@@ -79,10 +79,10 @@ const getReportTypeLabel = (type) => {
 const getFileName = (type) => {
   const date = new Date().toISOString().slice(0, 10);
   const names = {
-    ACTIVITY: `ServiceHub_Activity_Report_${date}.xlsx`,
-    USER: `ServiceHub_User_Report_${date}.xlsx`,
-    PERSONALIZED_BOOKING: `ServiceHub_Personalized_Booking_Report_${date}.xlsx`,
-    STANDARD_MIS: `ServiceHub_Standard_MIS_Report_${date}.xlsx`,
+    ACTIVITY: `Sahayra_Activity_Report_${date}.xlsx`,
+    USER: `Sahayra_User_Report_${date}.xlsx`,
+    PERSONALIZED_BOOKING: `Sahayra_Personalized_Booking_Report_${date}.xlsx`,
+    STANDARD_MIS: `Sahayra_Standard_MIS_Report_${date}.xlsx`,
   };
   return names[type];
 };

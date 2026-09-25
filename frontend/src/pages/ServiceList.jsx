@@ -748,7 +748,7 @@ const ServiceList = () => {
 
                       <p className="mt-4 line-clamp-2 min-h-[40px] text-sm leading-5 text-slate-500">
                         {service.description ||
-                          "Professional service available through ServiceHub."}
+                          "Professional service available through Sahayra."}
                       </p>
 
                       <div className="mt-5 flex items-end justify-between gap-4 border-t border-slate-100 pt-5">

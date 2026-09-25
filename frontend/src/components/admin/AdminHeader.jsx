@@ -13,13 +13,13 @@ const AdminHeader = ({ activeSection, search, setSearch, onRefresh, user }) => {
   };
 
   const descriptions = {
-    dashboard: "Monitor your ServiceHub platform from one place.",
+    dashboard: "Monitor your Sahayra platform from one place.",
     users: "Manage registered users and account access.",
     providers: "Review providers and verification status.",
     services: "Manage services available on the platform.",
     categories: "Create and manage service categories.",
     bookings: "Monitor and manage customer bookings.",
-    activity: "Track important actions performed across ServiceHub.",
+    activity: "Track important actions performed across Sahayra.",
     reports: "Generate activity, user and booking reports.",
   };
 
@@ -38,7 +38,7 @@ const AdminHeader = ({ activeSection, search, setSearch, onRefresh, user }) => {
             </h1>
 
             <p className="text-sm text-slate-500 mt-1">
-              {descriptions[activeSection] || "Manage ServiceHub."}
+              {descriptions[activeSection] || "Manage Sahayra."}
             </p>
           </div>
 

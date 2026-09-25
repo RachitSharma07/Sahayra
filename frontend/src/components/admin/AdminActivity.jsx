@@ -509,7 +509,7 @@ const AdminActivity = () => {
               </h2>{" "}
               <p className="mt-1 text-sm text-slate-500">
                 {" "}
-                Track administrative and system activity across ServiceHub.{" "}
+                Track administrative and system activity across Sahayra.{" "}
               </p>{" "}
             </div>{" "}
             <div className="rounded-full border border-cyan-100 bg-cyan-50 px-3 py-1.5 text-xs font-semibold text-cyan-700">

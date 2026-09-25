@@ -311,7 +311,7 @@ function Chat() {
       ? "Service Provider"
       : chatUser?.role === "customer"
         ? "Customer"
-        : "ServiceHub User";
+        : "Sahayra User";
 
   /*
    * Other person's initials.

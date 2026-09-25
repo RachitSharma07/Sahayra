@@ -768,7 +768,7 @@ function ServiceDetails() {
                         </p>
 
                         <p className="mt-1 text-xs leading-5 text-emerald-700">
-                          This provider has been verified by ServiceHub.
+                          This provider has been verified by Sahayra.
                         </p>
                       </div>
                     </div>

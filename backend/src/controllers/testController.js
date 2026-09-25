@@ -3,7 +3,7 @@ const testController = (req, res) => {
 
     if (req.method === "GET") {
         res.json({
-    "message": "ServiceHub API is working"
+    "message": "Sahayra API is working"
   })
     }
 

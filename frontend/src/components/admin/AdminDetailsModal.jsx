@@ -111,7 +111,7 @@ const AdminDetailsModal = ({ item, type, onClose }) => {
             {" "}
             <p className="text-xs uppercase tracking-[0.18em] text-[#0f766e] font-bold">
               {" "}
-              ServiceHub Admin{" "}
+              Sahayra Admin{" "}
             </p>{" "}
             <h2 className="text-xl font-bold text-[#08131f] mt-1">
               {" "}

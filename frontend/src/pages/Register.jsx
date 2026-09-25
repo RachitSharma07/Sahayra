@@ -193,7 +193,7 @@ function Register() {
                 </div>
 
                 <span className="text-2xl font-black tracking-tight text-white">
-                  ServiceHub
+                  Sahayra
                 </span>
               </button>
 
@@ -202,7 +202,7 @@ function Register() {
                   <span className="h-1.5 w-1.5 rounded-full bg-teal-300" />
 
                   <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-teal-200">
-                    Join ServiceHub
+                    Join Sahayra
                   </span>
                 </div>
 
@@ -291,7 +291,7 @@ function Register() {
                   </div>
 
                   <span className="text-xl font-black tracking-tight text-[#0d1b2a]">
-                    ServiceHub
+                    Sahayra
                   </span>
                 </button>
               </div>
@@ -306,7 +306,7 @@ function Register() {
                 </h2>
 
                 <p className="mt-3 text-sm leading-6 text-slate-500">
-                  Join ServiceHub and start using the platform today.
+                  Join Sahayra and start using the platform today.
                 </p>
               </div>
 

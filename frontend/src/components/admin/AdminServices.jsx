@@ -43,7 +43,7 @@ const AdminServices = ({
     <div className="space-y-6">
       <SectionIntro
         title="Services"
-        description="Manage services offered through ServiceHub."
+        description="Manage services offered through Sahayra."
         count={totalServices}
       />
 

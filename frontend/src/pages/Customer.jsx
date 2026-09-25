@@ -533,7 +533,7 @@ function Customer() {
                     </h2>
 
                     <p className="mt-1 text-sm text-slate-500">
-                      Start exploring services available through ServiceHub.
+                      Start exploring services available through Sahayra.
                     </p>
                   </div>
 
@@ -764,7 +764,7 @@ function Customer() {
 
                   <div>
                     <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-300">
-                      ServiceHub
+                      Sahayra
                     </p>
 
                     <h2 className="mt-2 text-xl font-semibold tracking-tight text-white">
@@ -792,7 +792,7 @@ function Customer() {
           </section>
 
           <div className="flex flex-col items-center justify-between gap-3 px-1 py-7 text-[11px] text-slate-400 sm:flex-row">
-            <p>ServiceHub customer workspace</p>
+            <p>Sahayra customer workspace</p>
 
             <div className="flex items-center gap-3">
               <span>Discover</span>

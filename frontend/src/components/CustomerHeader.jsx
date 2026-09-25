@@ -111,7 +111,7 @@ function CustomerHeader({ onMenuClick, section, description }) {
             </p>
 
             <p className="mt-1 text-sm font-medium text-slate-500">
-              {description || "Manage your ServiceHub experience"}
+              {description || "Manage your Sahayra experience"}
             </p>
           </div>
 

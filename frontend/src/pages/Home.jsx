@@ -312,7 +312,7 @@ function Home() {
 
             <div>
               <p className="text-[15px] font-bold tracking-tight text-[#0d1b2a]">
-                ServiceHub
+                Sahayra
               </p>
               <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-slate-400">
                 Local services
@@ -388,7 +388,7 @@ function Home() {
             </h1>
 
             <p className="hero-delay-2 mx-auto mt-8 max-w-2xl text-[15px] leading-7 text-white/50 sm:text-lg sm:leading-8">
-              ServiceHub brings customers and local professionals together in
+              Sahayra brings customers and local professionals together in
               one simple platform. Discover services, connect with the right
               person, and manage everything in one place.
             </p>
@@ -469,14 +469,14 @@ function Home() {
           </div>
         </section>
 
-        {/* WHAT IS SERVICEHUB */}
+        {/* WHAT IS Sahayra */}
         <section className="relative overflow-hidden bg-[#f4f7f7]">
           <div className="pointer-events-none absolute left-1/2 top-[-140px] h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-teal-300/10 blur-[110px]" />
 
           <div className="relative mx-auto max-w-5xl px-5 py-28 text-center sm:px-8 lg:py-36">
             <Reveal>
               <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-teal-600">
-                What is ServiceHub?
+                What is Sahayra?
               </p>
 
               <h2 className="mt-5 text-3xl font-semibold tracking-[-0.045em] text-[#0d1b2a] sm:text-4xl lg:text-5xl">
@@ -485,7 +485,7 @@ function Home() {
 
               <p className="mx-auto mt-6 max-w-2xl text-[15px] leading-8 text-slate-500 sm:text-base">
                 Finding a reliable professional should not feel complicated.
-                ServiceHub creates a straightforward connection between people
+                Sahayra creates a straightforward connection between people
                 who need services and professionals who provide them.
               </p>
 
@@ -510,7 +510,7 @@ function Home() {
                 </h2>
 
                 <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-white/40 sm:text-base">
-                  ServiceHub keeps the process clear so customers and
+                  Sahayra keeps the process clear so customers and
                   professionals can focus on the actual service.
                 </p>
               </div>
@@ -673,7 +673,7 @@ function Home() {
                     <p className="mt-5 text-sm leading-7 text-slate-500">
                       Create your professional profile, publish services, manage
                       bookings, communicate with customers, and build your
-                      presence through ServiceHub.
+                      presence through Sahayra.
                     </p>
 
                     <div className="mt-8 space-y-3">
@@ -720,7 +720,7 @@ function Home() {
               </h2>
 
               <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-white/40">
-                ServiceHub is designed around a simple idea: connecting people
+                Sahayra is designed around a simple idea: connecting people
                 with useful local services should be clear, accessible, and easy
                 to manage.
               </p>
@@ -743,7 +743,7 @@ function Home() {
 
               <div className="relative text-center">
                 <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-cyan-200/10 bg-white/[0.04] px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.22em] text-cyan-200">
-                  ServiceHub
+                  Sahayra
                 </div>
 
                 <h2 className="mx-auto mt-6 max-w-2xl text-3xl font-semibold tracking-[-0.045em] text-white sm:text-4xl lg:text-5xl">
@@ -751,7 +751,7 @@ function Home() {
                 </h2>
 
                 <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-white/45 sm:text-base sm:leading-8">
-                  Join ServiceHub and experience a simpler way to discover and
+                  Join Sahayra and experience a simpler way to discover and
                   manage local services.
                 </p>
 
@@ -775,7 +775,7 @@ function Home() {
       {/* FOOTER */}
       <footer className="border-t border-[#0d1b2a]/[0.08] bg-[#eef4f3]">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-8 text-xs text-[#0d1b2a]/40 sm:px-8 lg:flex-row lg:px-10">
-          <div>© 2026 ServiceHub</div>
+          <div>© 2026 Sahayra</div>
 
           <div>Connecting customers with local professionals.</div>
         </div>
