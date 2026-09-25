@@ -51,7 +51,6 @@ function ShieldIcon() {
         strokeLinejoin="round"
         d="M12 3.5 19 6v5.4c0 4.2-2.8 7.9-7 9.1-4.2-1.2-7-4.9-7-9.1V6l7-2.5Z"
       />
-
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -61,10 +60,49 @@ function ShieldIcon() {
   );
 }
 
+function CustomerIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      className="h-5 w-5"
+    >
+      <circle cx="12" cy="8" r="3" />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M5.5 20c.8-3.4 3-5.2 6.5-5.2s5.7 1.8 6.5 5.2"
+      />
+    </svg>
+  );
+}
+
+function ProviderIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      className="h-5 w-5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M5 20h14M7 20v-8h10v8M9 12V8h6v4M10 8V5h4v3"
+      />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M10 16h1M13 16h1" />
+    </svg>
+  );
+}
+
 function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [role, setRole] = useState("customer");
 
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -92,6 +130,7 @@ function Register() {
             name,
             email,
             password,
+            role,
           }),
         },
       );
@@ -108,6 +147,7 @@ function Register() {
       setName("");
       setEmail("");
       setPassword("");
+      setRole("customer");
 
       setTimeout(() => {
         navigate("/login");
@@ -169,9 +209,6 @@ function Register() {
 
       <div className="min-h-screen bg-[#08131f] px-4 py-4 sm:px-6 sm:py-6">
         <div className="mx-auto grid min-h-[calc(100vh-2rem)] max-w-6xl overflow-hidden rounded-[30px] border border-white/10 bg-white shadow-[0_30px_90px_rgba(0,0,0,0.28)] sm:min-h-[calc(100vh-3rem)] lg:grid-cols-[0.98fr_1.02fr]">
-          {/* ---------------------------------------- */}
-          {/* Left experience panel */}
-          {/* ---------------------------------------- */}
           <div className="relative hidden overflow-hidden bg-[#08131f] p-10 lg:flex lg:flex-col lg:justify-between xl:p-12">
             <div className="pointer-events-none absolute -left-24 -top-24 h-80 w-80 rounded-full bg-teal-400/15 blur-3xl register-glow" />
 
@@ -253,7 +290,6 @@ function Register() {
               </div>
             </div>
 
-            {/* Increased separation from last feature card */}
             <div className="relative z-10 mt-16 flex shrink-0 items-center gap-3 border-t border-white/5 pt-7 text-sm text-slate-500">
               <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-emerald-300/10 bg-emerald-300/5 text-emerald-300">
                 <ShieldIcon />
@@ -271,9 +307,6 @@ function Register() {
             </div>
           </div>
 
-          {/* ---------------------------------------- */}
-          {/* Right form panel */}
-          {/* ---------------------------------------- */}
           <div className="relative flex items-center justify-center overflow-hidden bg-[#f4f7f7] px-6 py-10 sm:px-10 lg:px-12">
             <div className="pointer-events-none absolute -right-24 top-12 h-64 w-64 rounded-full bg-teal-200/25 blur-3xl" />
 
@@ -384,6 +417,73 @@ function Register() {
                   className="register-rise"
                   style={{ animationDelay: "140ms" }}
                 >
+                  <label className="mb-2 block text-xs font-bold uppercase tracking-[0.14em] text-slate-500">
+                    Account type
+                  </label>
+
+                  <div className="grid grid-cols-2 gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setRole("customer")}
+                      className={`rounded-2xl border p-4 text-left transition duration-200 ${
+                        role === "customer"
+                          ? "border-teal-400 bg-teal-50 shadow-[0_8px_24px_rgba(20,184,166,0.10)]"
+                          : "border-slate-200 bg-white hover:border-teal-200 hover:bg-slate-50"
+                      }`}
+                    >
+                      <div
+                        className={`mb-3 flex h-9 w-9 items-center justify-center rounded-xl ${
+                          role === "customer"
+                            ? "bg-teal-100 text-teal-700"
+                            : "bg-slate-100 text-slate-500"
+                        }`}
+                      >
+                        <CustomerIcon />
+                      </div>
+
+                      <p className="text-sm font-black text-[#0d1b2a]">
+                        Customer
+                      </p>
+
+                      <p className="mt-1 text-xs leading-5 text-slate-500">
+                        Find and book services
+                      </p>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => setRole("provider")}
+                      className={`rounded-2xl border p-4 text-left transition duration-200 ${
+                        role === "provider"
+                          ? "border-cyan-400 bg-cyan-50 shadow-[0_8px_24px_rgba(34,211,238,0.10)]"
+                          : "border-slate-200 bg-white hover:border-cyan-200 hover:bg-slate-50"
+                      }`}
+                    >
+                      <div
+                        className={`mb-3 flex h-9 w-9 items-center justify-center rounded-xl ${
+                          role === "provider"
+                            ? "bg-cyan-100 text-cyan-700"
+                            : "bg-slate-100 text-slate-500"
+                        }`}
+                      >
+                        <ProviderIcon />
+                      </div>
+
+                      <p className="text-sm font-black text-[#0d1b2a]">
+                        Provider
+                      </p>
+
+                      <p className="mt-1 text-xs leading-5 text-slate-500">
+                        Offer your services
+                      </p>
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  className="register-rise"
+                  style={{ animationDelay: "210ms" }}
+                >
                   <label
                     htmlFor="password"
                     className="mb-2 block text-xs font-bold uppercase tracking-[0.14em] text-slate-500"
@@ -415,15 +515,15 @@ function Register() {
 
                 <div
                   className="register-rise flex items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3.5"
-                  style={{ animationDelay: "210ms" }}
+                  style={{ animationDelay: "280ms" }}
                 >
                   <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-600">
                     <ShieldIcon />
                   </div>
 
                   <p className="text-xs leading-5 text-amber-800">
-                    Use an email address you can access so your account details
-                    remain easy to manage.
+                    Choose the account type that matches how you want to use
+                    Sahayra.
                   </p>
                 </div>
 
@@ -431,7 +531,7 @@ function Register() {
                   type="submit"
                   disabled={loading}
                   className="group register-rise flex h-13 w-full items-center justify-center gap-2 rounded-2xl bg-[#08131f] px-5 text-sm font-bold text-white shadow-[0_12px_28px_rgba(8,19,31,0.16)] transition duration-200 hover:-translate-y-0.5 hover:bg-teal-600 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0 disabled:hover:bg-[#08131f]"
-                  style={{ animationDelay: "280ms" }}
+                  style={{ animationDelay: "350ms" }}
                 >
                   {loading ? (
                     <>
@@ -451,7 +551,7 @@ function Register() {
 
               <div
                 className="register-rise mt-7 rounded-2xl border border-slate-200 bg-white/75 px-4 py-4 text-center"
-                style={{ animationDelay: "350ms" }}
+                style={{ animationDelay: "420ms" }}
               >
                 <p className="text-sm text-slate-500">
                   Already have an account?{" "}
@@ -466,7 +566,7 @@ function Register() {
 
               <p
                 className="register-rise mt-7 text-center text-[10px] leading-5 text-slate-400"
-                style={{ animationDelay: "420ms" }}
+                style={{ animationDelay: "490ms" }}
               >
                 By creating an account, you agree to our Terms of Service and
                 Privacy Policy.

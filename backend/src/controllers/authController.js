@@ -4,28 +4,41 @@ const jwt = require("jsonwebtoken");
 const { createAuditLog } = require("./auditLogController");
 const register = async (req, res) => {
   try {
-    const { name, email, password } = req.body;
-    if (!name || !email || !password) {
+    const { name, email, password, role } = req.body;
+
+    if (!name || !email || !password || !role) {
       return res.status(400).json({ message: "All fields are required" });
     }
+
+    if (!["customer", "provider"].includes(role)) {
+      return res.status(400).json({ message: "Invalid role" });
+    }
+
     const existingUser = await User.findOne({ email });
+
     if (existingUser) {
       return res.status(400).json({ message: "User already exists" });
     }
+
     const hashedPassword = await bcrypt.hash(password, 10);
-    const user = await User.create({ name, email, password: hashedPassword });
-    res
-      .status(201)
-      .json({
-        message: "User registered successfully",
-        user: {
-          id: user._id,
-          name: user.name,
-          email: user.email,
-          role: user.role,
-          isVerified: user.isVerified,
-        },
-      });
+
+    const user = await User.create({
+      name,
+      email,
+      password: hashedPassword,
+      role,
+    });
+
+    res.status(201).json({
+      message: "User registered successfully",
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        role: user.role,
+        isVerified: user.isVerified,
+      },
+    });
   } catch (error) {
     res.status(500).json({ message: "Registration failed" });
   }
@@ -60,19 +73,17 @@ const login = async (req, res) => {
       req,
       metadata: { email: user.email, role: user.role },
     });
-    res
-      .status(200)
-      .json({
-        message: "Login successful",
-        token,
-        user: {
-          id: user._id,
-          name: user.name,
-          email: user.email,
-          role: user.role,
-          isVerified: user.isVerified,
-        },
-      });
+    res.status(200).json({
+      message: "Login successful",
+      token,
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        role: user.role,
+        isVerified: user.isVerified,
+      },
+    });
   } catch (error) {
     res.status(500).json({ message: "Login failed" });
   }
