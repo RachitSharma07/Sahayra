@@ -20,7 +20,9 @@ const adminRoutes = require("./routes/adminRoutes");
 const reportRoutes = require("./routes/reportRoutes");
 app.use(express.json());
 
-const allowedOrigins = process.env.FRONTEND_URLS.split(",");
+const allowedOrigins = process.env.FRONTEND_URLS.split(",").map((origin) =>
+  origin.trim(),
+);
 
 app.use(
   cors({

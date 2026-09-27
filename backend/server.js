@@ -27,11 +27,13 @@ const server = http.createServer(app);
 /*
  * Socket.IO
  */
+const allowedOrigins = process.env.FRONTEND_URLS.split(",");
+
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173", "http://127.0.0.1:5173"],
-
+    origin: allowedOrigins,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    credentials: true,
   },
 });
 
